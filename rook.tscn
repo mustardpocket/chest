@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpj2grprfcddv"]
+
+[ext_resource type="Texture2D" uid="uid://sgw42vxo0eqg" path="res://chess/white_rook.png" id="1_squk7"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_so7i7"]
+
+[node name="Rook" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_squk7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_so7i7")
